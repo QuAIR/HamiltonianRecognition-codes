@@ -4,13 +4,13 @@ Source code for the paper [*Optimal Hamiltonian recognition of unknown quantum d
 
 Identifying unknown Hamiltonians from their quantum dynamics is a pivotal challenge in quantum technologies and fundamental physics. Based on two quantum signal processing (QSP) structures, one can develop quantum algorithms to differentiate rotations with unknown angles, governed by unknown qubit-Hamiltonian selected from a known set.
 
-In this repository, we provide two algorithm examples: one for binary Hamiltonian recognition that differentiate X, Z rotations, and the other for ternary Hamiltonian recognition that differentiate X, Y, Z rotations.
+In this repository, we provide two algorithm examples: one for binary Hamiltonian recognition that differentiates X, Z rotations, and the other for ternary Hamiltonian recognition that differentiates X, Y, Z rotations.
 
 | Protocols in this paper      | Location in this repository                            |
 |--------------------|------------------------------------------------------------------|
-| [binary Hamiltonian recognition (real experiment)](./qpu_experiment/XZ_recognition.ipynb)   | `qpu_experiment/XZ_recognition.ipynb`|
-| [binary Hamiltonian recognition (local simulation)](./verification/XZ_recognition.ipynb)    | `verification/XZ_recognition.ipynb`|
-| [ternary Hamiltonian recognition (local simulation)](./verification/XYZ_recognition.ipynb)  | `verification/XYZ_recognition.ipynb`|
+| [binary Hamiltonian recognition](./qpu_experiment/XZ_recognition.ipynb) (real experiment)  | `qpu_experiment/XZ_recognition.ipynb`|
+| [binary Hamiltonian recognition](./verification/XZ_recognition.ipynb) (local simulation)  | `verification/XZ_recognition.ipynb`|
+| [ternary Hamiltonian recognition](./verification/XYZ_recognition.ipynb) (local simulation) | `verification/XYZ_recognition.ipynb`|
 
 ## How to Run These Files?
 
@@ -22,7 +22,7 @@ conda activate hamiltonian
 conda install jupyter notebook
 ```
 
-QPU experiments are based on the cloud platform provided by [Tencent Quantum Lab](https://github.com/tencent-quantum-lab). For readers who are interest in QPU experiments, please use the following command to install the necessary package:
+QPU devices are provided by the cloud platform of [Tencent Quantum Lab](https://github.com/tencent-quantum-lab). For readers who are interest in real experiments, please use the following command to install the necessary package:
 
 ```bash
 pip install "tensorcircuit[cloud]"
